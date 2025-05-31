@@ -6,8 +6,11 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<MainLayout />}>
-          <Route path="" element={<Navigate to={"/dashboard"} />} />
+        <Route path="/AdminPanelTest/" element={<MainLayout />}>
+          <Route
+            path=""
+            element={<Navigate to={"/AdminPanelTest/dashboard"} />}
+          />
           <Route path="dashboard" element={<DashBoard />} />
           <Route path="products" element={<DashBoard />} />
           <Route path="customers" element={<DashBoard />} />
